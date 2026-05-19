@@ -83,9 +83,7 @@ nextBtn.addEventListener("click", () => {
         slides.length - visibleSlides;
 
     if(index < maxIndex) {
-
         index++;
-
         updateCarousel();
     }
 });
@@ -93,9 +91,7 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
 
     if(index > 0) {
-
         index--;
-
         updateCarousel();
     }
 });
