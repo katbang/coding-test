@@ -5,9 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcel Vanilla App</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/index.js"></script>
   </head>
   <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
+    <header>
+        <img id="burger-nav" src="assets/burger-nav.svg" alt="Burger navigation">
+        <img id="brand-logo" src="assets/brand-logo-mobile.svg" alt="Brand Logo">
+        <nav aria-label="primary">
+            <ul id="main-nav">
+                <li><a href="">Shop</a></li>
+                <li><a href="">Science</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Tutorials</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="utility">
+            <ul>
+                <li><a href="" aria-label="search"><img class="nav-icon" src="assets/search-icon.svg" alt="Search Icon"></a></li>
+                <li><a href="" aria-label="profile"><img class="nav-icon" src="assets/profile-icon.svg" alt="Profile Icon"></a></li>
+                <li class="cart"><a href="" aria-label="cart"><img class="nav-icon" src="assets/bi_bag.svg" alt="Bag Icon"></a><div id="total-items" class="hidden">0</div></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-display">
+            <ul>
+                <li><a href="">ALL PRODUCTS / </a></li>
+                <li><a href="">HAIRCARE / </a></li>
+                <li><a href="">RESTORATIVE HAIR MASK</a></li>
+            </ul>
+            <img src="assets/product.png" alt="">
+            <section>
+                <h1>RESTORATIVE HAIR MASK</h1>
+                <div>
+                    <h2>NURTURISHMENT IN A BOTTLE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+                    <ul id="info-list">
+                        <li><img src="assets/info-icon.png" alt="Info icon"><p>100% ORGANIC</p></li>
+                        <li><img src="assets/info-icon.png" alt="Info icon"><p>100% ORGANIC</p></li>
+                        <li><img src="assets/info-icon.png" alt="Info icon"><p>100% ORGANIC</p></li>
+                        <li><img src="assets/info-icon.png" alt="Info icon"><p>100% ORGANIC</p></li>
+                    </ul>
+                    <form action="">
+                        <div>
+                            <input class="radio" type="radio" id="buy-once" name="purchasing-option" value="buy-once">
+                            <label for="buy-once">Buy once | $38</label>
+                        </div>
+                        <div>
+                            <input class="radio" type="radio" id="subscribe" name="purchasing-option" value="subscribe">
+                            <label for="subscribe">Subscribe (SAVE 20%) | $30</label>
+                        </div>
+                        <div>
+                            <div id="select-amount">
+                                <button type="button" id="subtract">-</button>
+                                <input id="amount" name="amount" disabled placeholder="1"></input>
+                                <button type="button" id="add">+</button>
+                            </div>
+                            <button id="add-to-cart" type="submit">ADD TO CART</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="ingredients">
+                <button class="accordion">Ingredients</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+                </div>
+    
+                <button class="accordion">Ingredients</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+                </div>
+    
+                <button class="accordion">Ingredients</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut.</p>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h3>YOU MAY ALSO LIKE</h3>
+            <div class="carousel">
+                <button class="carousel__prev">
+                    <
+                </button>
+                <div class="recommendations">
+                    <ul class="carousel__track">
+                        <li>
+                            <article>
+                                <img src="assets/product-2.png" alt="product">
+                                <h4>HAND POMADE / POMMADE MAINS</h4>
+                                <h5>NOURISHMENT FOR YOUR HANDS</h5>
+                                <p>159,00  KR</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="assets/product-2.png" alt="product">
+                                <h4>HAND POMADE / POMMADE MAINS</h4>
+                                <h5>NOURISHMENT FOR YOUR HANDS</h5>
+                                <p>159,00  KR</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="assets/product-2.png" alt="product">
+                                <h4>HAND POMADE / POMMADE MAINS</h4>
+                                <h5>NOURISHMENT FOR YOUR HANDS</h5>
+                                <p>159,00  KR</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <img src="assets/product-2.png" alt="product">
+                                <h4>HAND POMADE / POMMADE MAINS</h4>
+                                <h5>NOURISHMENT FOR YOUR HANDS</h5>
+                                <p>159,00  KR</p>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__next">
+                    >
+                </button>
+            </div>
+        </section>
+    </main>
   </body>
 </html>
